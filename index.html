@@ -1,1 +1,138 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест формы</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    .container {
+      max-width: 520px;
+      margin: 70px auto;
+      padding: 20px;
+    }
+
+    .form-card {
+      background: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      margin-bottom: 25px;
+      color: #666;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      margin-bottom: 18px;
+      border: 1px solid #d5d9de;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #555;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: 0;
+      border-radius: 8px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form-card">
+
+      <h1>Свяжитесь с нами</h1>
+      <div class="subtitle">
+        Тестовая форма отправки через Formspree
+      </div>
+
+      <form action="https://formspree.io/f/xgaovlkw" method="POST">
+
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Введите ваше имя"
+          required
+        >
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Введите email"
+          required
+        >
+
+        <label for="message">Сообщение</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Введите сообщение"
+          required
+        ></textarea>
+
+        <button type="submit">Отправить</button>
+
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
+```
 
